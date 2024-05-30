@@ -4,6 +4,19 @@ Yeongmin Ko's learning notes
 ### 1. K-Nearest Neighbor
 
 ### 2. Naive Bayes
+- 베이즈 정리(Bayes' theorem): 사전확률과 사후확률의 관계에 대해서 설명하는 정리
+- ![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/ec97f4bb-f437-45e8-b588-eb5dc8dbb0b2)
+- 용어 정리
+  - 가설(H, Hypothesis): 가설 혹은 어떤 사건이 발생했다는 주장
+  - 증거(E, Evidence): 새로운 정보
+  - 우도(가능도, likelihood) = P(E|H): 가설(H)이 증거(H)를 지지할 가능성
+    - 확률 vs 우도
+      - 확률: 특정 경우에 대한 상대적 비율
+        - 모든 경우에 대하여 더하면 1이 됨(Mutually exclusive & exhaustive)
+      - 우도: '가설'에 대한 상대적 비율
+        - 가설은 얼마든지 세울 수 있고, 심지어 서로간에 포함관계가 될 수도 있음(Not mutually exclusive & Not exhaustive)
+  - 사전확률(Prior probaility) = P(H): 어떤 사건이 발생했다는 주장의 신뢰도
+  - 사후확률(Posterior probability) = P(H|E): 새로운 정보를 받은 후 갱신된 신뢰도
 
 ### 3. Apriori Algorithm
 
