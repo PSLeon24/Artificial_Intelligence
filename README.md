@@ -18,3 +18,13 @@
   - p가 0.5일 때 0이 되고 가 0과 1일 때 각각 무한대로 음수와 양수가 되는 특징을 가짐
 - Sigmoid function(시그모이드 함수)
   - <img src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/44c8677a-74cb-4427-a015-4d3993248337" width="400px">
+
+### 3. Perceptron
+
+### 4. Adaline
+
+### 5. Single Layer Neural Network
+
+### 6. Apriori Algorithm
+
+### 7. Collaborative Filtering
