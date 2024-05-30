@@ -1,7 +1,17 @@
 # Artificial_Intelligence
-### 1. Linear Regression
+Yeongmin Ko's learning notes
 
-### 2. Logistic Regression
+### 1. K-Nearest Neighbor
+
+### 2. Naive Bayes
+
+### 3. Apriori Algorithm
+
+### 4. Collaborative Filtering
+
+### 5. Linear Regression
+
+### 6. Logistic Regression
 - 로지스틱 회귀(Logistic Regression): 입력 변수들을 선형 함수에 통과시켜 얻은 값을 활성화 함수를 통해 변환시켜 얻은 확률을 임계 함수를 통해 예측을 수행하는 구조
   - 활성화 함수: 선형 함수를 통과시켜 얻은 값을 임계 함수에 보내기 전에 변형시키는데 필요한 함수로, 주로 비선형 함수를 사용
     - Why does Activation function use nonlinear function?
@@ -19,12 +29,16 @@
 - Sigmoid function(시그모이드 함수)
   - <img src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/44c8677a-74cb-4427-a015-4d3993248337" width="400px">
 
-### 3. Perceptron
+### 7. Perceptron
 
-### 4. Adaline
+### 8. Adaline
 
-### 5. Single Layer Neural Network
+### 9. Single Layer Neural Network
 
-### 6. Apriori Algorithm
+### 10. Multi Layer Neural Network
 
-### 7. Collaborative Filtering
+### 11. Convolutional Neural Network
+
+### 12. Recurrent Neural Network
+
+### 13. Long Short-Term Memory
