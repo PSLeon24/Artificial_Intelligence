@@ -18,7 +18,7 @@ Yeongmin Ko's learning notes
   - 사전확률(Prior probaility) = P(H): 어떤 사건이 발생했다는 주장의 신뢰도
   - 사후확률(Posterior probability) = P(H|E): 새로운 정보를 받은 후 갱신된 신뢰도
 
-### 3. Apriori Algorithm
+### 3. Association Mining(Apriori Algorithm)
 
 ### 4. Collaborative Filtering
 
