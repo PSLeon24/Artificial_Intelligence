@@ -6,10 +6,11 @@ Yeongmin Ko's learning notes
 ### 2. Naive Bayes
 - 베이즈 정리(Bayes' theorem): 사전확률과 사후확률의 관계에 대해서 설명하는 정리
 - ![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/ec97f4bb-f437-45e8-b588-eb5dc8dbb0b2)
+- <img width="191" alt="스크린샷 2024-05-30 오후 1 32 03" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/1d0da83c-5617-42cf-9437-3dea2c5288c1">
 - 용어 정리
   - 가설(H, Hypothesis): 가설 혹은 어떤 사건이 발생했다는 주장
   - 증거(E, Evidence): 새로운 정보
-  - 우도(가능도, likelihood) = P(E|H): 가설(H)이 증거(H)를 지지할 가능성
+  - 우도(가능도, likelihood) = P(E|H): 가설(H)이 주어졌을 때 증거(E)가 관찰될 가능성
     - 확률 vs 우도
       - 확률: 특정 경우에 대한 상대적 비율
         - 모든 경우에 대하여 더하면 1이 됨(Mutually exclusive & exhaustive)
