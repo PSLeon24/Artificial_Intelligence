@@ -36,6 +36,7 @@ Yeongmin Ko's learning notes
 
 - DBSCAN(밀도 기반 클러스터링)
   - 어느 점을 기준으로 반경 radius 내에 점이 n개 이상 있으면 하나의 군집으로 인식하는 방식
+    - 점 p가 있을 때, 점 p에서 부터 거리 e(epsilon)내에 점이 m(minPts)개 있으면 하나의 군집으로 인식
   - <img width="400" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/88ab9c6f-d72a-4938-ac35-8c803e5dc6ab">
 
 ### 2. K-Nearest Neighbors
