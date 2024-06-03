@@ -1,4 +1,4 @@
-# Artificial_Intelligence
+# Artificial Intelligence
 Yeongmin Ko's learning notes
 
 #### Difference
