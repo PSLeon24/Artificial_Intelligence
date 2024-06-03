@@ -1,7 +1,23 @@
 # Artificial_Intelligence
 Yeongmin Ko's learning notes
+#### Difference
+- Classification: KNN, Decision Tree
+- Regression: Linear and Logistic Regression
+- Clustering: K-Means, Agglomerative Filtering, DBSCAN
+- <img width="626" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/b66ab79f-faab-47ad-bce3-975e0f94b7b7">
 
 ### 1. K-Means(Clustering)
+- 군집화(Clustering): 서로 유사한 데이터 개체 집합을 하위 집합으로 분할하는 프로세스(The process of partitioning a set of data objects that are similar to each other into subsets)
+  - <img width="300" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/c68d8304-d5a5-44f3-a4de-ba72c82e98d4">
+  - 이때, 각 하위 집합을 클러스터라고 부름(A subset is called cluster)
+  - <img width="300" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/9f154364-d262-4917-8e5e-11622078ddf9">
+- K-Means
+  - K는 클러스터(하위 집합)의 갯수(K is number of clusters)
+
+  - <img width="400" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/074355e7-de56-4c05-826d-e8f26361a40c">
+
+    - 위 그림의 경우, K = 4
+
 
 ### 2. K-Nearest Neighbors
 - K 최근접 이웃(K-Nearest Neighbors)
