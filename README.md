@@ -1,4 +1,4 @@
-# Artificial_Intelligence
+<img width="326" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/e83e7964-95b1-420d-bdf1-6566d5c105eb"># Artificial_Intelligence
 Yeongmin Ko's learning notes
 
 ### 1. K-Nearest Neighbors
@@ -75,16 +75,36 @@ Yeongmin Ko's learning notes
 
 ### 13. Long Short-Term Memory
 
---
+---
 
 ## Evaluation Metrics
 ### 1. Classification
-- 혼동 행렬(Confusion matrix)
-- 정확도(Accuracy)
-- 오차율(Error rate)
-- 정밀도(Precision)
-- 재현율(Recall)
-- F 점수(F-Score)
+- 혼동행렬(Confusion matrix)
+  - 혼동행렬: 예측값이 실제값과 일치하는지 여부에 따라 분류한 표(a table that categorizes predictions according to whether they match the actual value)
+  - The most common performance measures consider the model's ability to discern one class versus all others
+    - The class of interest is known as the positive
+    - All others are known as negative
+  - The relationship between the positive class and negative class predictions can be depicted as a 2 x 2 confusion matrix
+    - True Positive(TP): Correctly classfied as the class of interest
+    - True Negative(TN): Correctly classified as not the class of interest
+    - False Positive(FP): Incorrectly classified as the class of interest
+    - False Negative(FN): Incorrectly classified as not the class of interest
+  - ![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/11af3389-daf8-42f2-9b4d-62f8db75067c)
+    - T와 F의 경우, True(참)와 False(거짓)을 나타내며, 예측값과 실제값이 일치하는 경우 T가 오고 예측값과 실제값이 다른 경우 F가 옴
+    - P와 N의 경우, Positive(긍정)와 Negative(부정)을 나타내며, 예측값이 양성 클래스(1)을 나타내는 경우 P가 오고 예측값이 음성 클래스(0)을 나타내는 경우 N이 옴 
+    - e.g., 예측값=0, 실제값=0인 경우, TN
+    - e.g., 예측값=1, 실제값=0인 경우, FP
+- 정확도(Accuracy): 2 x 2 혼동행렬에서, 아래와 같이 정확도를 수식화할 수 있음
+  - <img width="326" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/1881977a-9a9a-4107-8a0d-b9b3c0b8bfd0">
+- 오분류율(Error rate): 오분류율은 1에서 정확도를 빼면 됨
+  - <img width="432" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/a8d70ffa-20f5-4d2e-b63d-7e8aae638e23">
+- 정밀도(Precision): 정밀도는 모델의 예측값이 긍정인 것들 중 실제값이 긍정인 비율을 나타냄
+  - <img width="210" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/3d1a2bc9-f6f4-4656-add9-5eb290020954">
+- 재현율(Recall): 재현율은 실제값이 긍정인 것들 중 예측값이 긍정인 비율을 나타냄
+  - <img width="168" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/ebcc335b-6be3-427b-a6e5-6b61702655f6">
+- F 점수(F-Score): 정밀도와 재현율의 조화평균
+  - <img width="461" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/fbea55ca-f00c-4291-842a-54dd0af1f686">
+
 ### 2. Regression
 - 평균 제곱 오차(Mean Squared Error, MSE)
 - 평균 절대 오차(Mean absolute error, MAE)
