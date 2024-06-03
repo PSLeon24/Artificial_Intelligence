@@ -118,6 +118,7 @@ Yeongmin Ko's learning notes
   - <img width="442" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/65720a5b-bf55-4437-978e-340b54e7b8b8">
   - 사용자 간의 유사성 계산(피어슨 상관계수 활용)
   - <img width="429" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/d8fed7b3-d0ae-499a-b262-759e911d652a">
+  
   - <img width="329" alt="스크린샷 2024-06-03 오후 2 36 23" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/026f208e-9e73-4905-9171-65032f785e51">
   - 사용자 A와 B의 공분산을 각각의 표준편차의 곱으로 나누면 피어슨 상관계수를 구할 수 있음
   
