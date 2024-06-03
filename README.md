@@ -36,7 +36,12 @@ Yeongmin Ko's learning notes
         - 가설은 얼마든지 세울 수 있고, 심지어 서로간에 포함관계가 될 수도 있음(Not mutually exclusive & Not exhaustive)
   - 사전확률(Prior probaility) = P(H): 어떤 사건이 발생했다는 주장의 신뢰도
   - 사후확률(Posterior probability) = P(H|E): 새로운 정보를 받은 후 갱신된 신뢰도
-
+- 작동 원리
+  - Step 1. 주어진 클래스 라벨에 대한 사전 확률(Prior probability)을 계산
+  - Step 2. 각 클래스의 각 속성으로 우도 확률(Likelihood probability) 계산
+  - Step 3. 이 값을 Bayes Formula에 대입하고 사후 확률(Posterior probability)을 계산
+  - Step 4. 1~3의 결과로 어떤 클래스가 높은 사후 확률을 갖게 될 지 알 수 있음(입력 값이 어떤 클래스에 더 높은 확률로 속할 수 있을지)
+    
 ### 3. Association Mining(Apriori Algorithm)
 
 ### 4. Collaborative Filtering
