@@ -1,4 +1,4 @@
-<img width="326" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/e83e7964-95b1-420d-bdf1-6566d5c105eb"># Artificial_Intelligence
+# Artificial_Intelligence
 Yeongmin Ko's learning notes
 
 ### 1. K-Nearest Neighbors
