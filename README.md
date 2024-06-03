@@ -4,7 +4,7 @@ Yeongmin Ko's learning notes
 ### 1. K-Nearest Neighbors
 - K 최근접 이웃(K-Nearest Neighbors)
   - 새로운 데이터가 들어왔을 때 기존 데이터 중 새로운 데이터와 비슷한 속성의 그룹으로 분류하는 알고리즘(Classifies unlabeled data points by assigning them the class of similar labeled data points)
-- 작동 원리
+- 작동 알고리즘
   - Step 1. 주변의 몇 개의 데이터와 비교할지 파라미터 k 결정(Determine parameter k (k > 0))
   - Step 2. 새 데이터와 기존 데이터 간의 거리를 계산해서 두 데이터 간의 유사도 구하기(Determine similarity by calculating the distance between a test point and all other points in the dataset)
   - Step 3. 2단계에서 계산한 거리 값에 따라 데이터 세트를 정렬(Sort the dataset according to the distance values)
@@ -36,13 +36,32 @@ Yeongmin Ko's learning notes
         - 가설은 얼마든지 세울 수 있고, 심지어 서로간에 포함관계가 될 수도 있음(Not mutually exclusive & Not exhaustive)
   - 사전확률(Prior probaility) = P(H): 어떤 사건이 발생했다는 주장의 신뢰도
   - 사후확률(Posterior probability) = P(H|E): 새로운 정보를 받은 후 갱신된 신뢰도
-- 작동 원리
+- 작동 알고리즘
   - Step 1. 주어진 클래스 라벨에 대한 사전 확률(Prior probability)을 계산
   - Step 2. 각 클래스의 각 속성으로 우도 확률(Likelihood probability) 계산
   - Step 3. 이 값을 Bayes Formula에 대입하고 사후 확률(Posterior probability)을 계산
   - Step 4. 1~3의 결과로 어떤 클래스가 높은 사후 확률을 갖게 될 지 알 수 있음(입력 값이 어떤 클래스에 더 높은 확률로 속할 수 있을지)
     
 ### 3. Association Mining(Apriori Algorithm)
+- 연관 규칙 분석
+  - 데이터에서 변수 간의 유의미한 규칙을 발견하는 데 쓰이는 알고리즘
+  - e.g., 라면을 구매하는 고객이 햇반을 함께 구매할 가능성이 높다.
+- 연관성 규칙 생성 과정
+  - 1단계: 지지도(Support, 교사건)
+    - 데이터에서 항목 집합이 얼마나 빈번하게 등장하는지를 나타내는 척도
+    - Support(X) = Count(X) / n
+  - 2단계: 신뢰도(Confidence, 조건부 확률)
+    - 조건부 아이템(A)을 구매한 경우, 이중에서 얼마나 결론부 아이템(B)을 구매할 것인지를 나타내는 척도
+    - Confidence(A → B) = Support(X, Y) / Support(X) = Support(X, Y) / Support(X)
+- Apriori Algorithm
+  - 연관 규칙(association rule)의 대표적인 알고리즘으로, 특정 사건이 발생했을 때 함께 발생하는 또 다른 사건의 규칙을 찾는 알고리즘
+  - 작동 알고리즘
+    - 1단계: 모든 항목의 빈도를 계산하여 최소 지지도(minimum support)를 넘는 항목들만 남김
+    - 2단계: 남은 항목들을 조합하여 2개의 항목 집합으로 이루어진 후보 항목 집합을 만듦
+    - 3단계: 2단계에서 만든 후보 항목 집합으로부터 빈도를 계산하여 최소 지지도를 넘는 항목들만 남김
+    - 4단계: 후보 항목 집합이 더이상 나오지 않을 때까지 남은 항목들로부터 2~3단계를 반복 수행
+    - 5단계: 각 빈발 항목 집합에 대해 모든 가능한 연관 규칙을 생성하고 각각의 신뢰도(confidence)를 계산함
+    - 6단계: 신뢰도가 최소 신뢰도(minimum confidence)를 넘는 규칙들만 남김
 
 ### 4. Collaborative Filtering
 
