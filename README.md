@@ -1,17 +1,18 @@
 # Artificial_Intelligence
 Yeongmin Ko's learning notes
+
 #### Difference
 - Classification: KNN, Decision Tree
 - Regression: Linear and Logistic Regression
-- Clustering: K-Means, Agglomerative Filtering, DBSCAN
+- Clustering: K-Means, Agglomerative clustering, DBSCAN
 - <img width="626" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/b66ab79f-faab-47ad-bce3-975e0f94b7b7">
 
-### 1. K-Means(Clustering)
+### 1. Clustering(K-Means, 
 - 군집화(Clustering): 서로 유사한 데이터 개체 집합을 하위 집합으로 분할하는 프로세스(The process of partitioning a set of data objects that are similar to each other into subsets)
   - <img width="300" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/c68d8304-d5a5-44f3-a4de-ba72c82e98d4">
   - 이때, 각 하위 집합을 클러스터라고 부름(A subset is called cluster)
   - <img width="300" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/9f154364-d262-4917-8e5e-11622078ddf9">
-- K-Means
+- K-Means(K-평균)
   - K는 클러스터(하위 집합)의 갯수(K is number of clusters)
   - 중심 기반 테크닉(A centroid-based technique)
     - Centroid는 각 클러스터에 속한 객체의 평균(Centroid is the average of objects belonging to each cluster)
@@ -24,6 +25,17 @@ Yeongmin Ko's learning notes
   - Step 3. 모든 점을 가장 가까운 중심에 할당하여 k개의 클러스터를 형성
   - Step 4. 각 클러스터의 중심점을 다시 계산(각 클러스터의 평균 계산)
   - Step 5. 중심이 변하지 않을 때까지 3~4단계를 반복
+
+- Agglomerative clustering(병합 군집)
+  - 상향식 전략(Bottom-up strategy)
+  - 각 개체가 자체 클러스터를 형성하도록 하는 것부터 시작하여 모든 객체가 단일 클러스터에 포함될 때까지 클러스터를 점점 더 큰 클러스터로 반복적으로 병합
+- 작동 알고리즘
+  - Step 1. 각 객체는 하나의 클러스터를 형성
+  - Step 2. 가장 낮은 수준에서 가장 가까운 두 개의 클러스터를 하나의 클러스터로 병합
+  - Step 3. 단일 클러스터가 될 때까지 2단계를 반복
+
+- DBSCAN(밀도 기반 클러스터링)
+  - "이웃"의 밀도가 일부 임계값을 초과하는 한 특정 클러스터를 계속 늘려나감
 
 ### 2. K-Nearest Neighbors
 - K 최근접 이웃(K-Nearest Neighbors)
@@ -124,7 +136,11 @@ Yeongmin Ko's learning notes
 ---
 
 ## Evaluation Metrics
-### 1. Classification
+### 1. Clustering
+- Adjusted Rand Index
+  - ![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/ae0faaa6-0713-4616-a02f-2dab287339a4)
+
+### 2. Classification
 - 혼동행렬(Confusion matrix)
   - 혼동행렬: 예측값이 실제값과 일치하는지 여부에 따라 분류한 표(a table that categorizes predictions according to whether they match the actual value)
   - The most common performance measures consider the model's ability to discern one class versus all others
@@ -153,6 +169,6 @@ Yeongmin Ko's learning notes
 - F 점수(F-Score): 정밀도와 재현율의 조화평균
   - <img width="326" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/e2e410db-b2e6-4cc3-95c5-af5164d27b24">
 
-### 2. Regression
+### 3. Regression
 - 평균 제곱 오차(Mean Squared Error, MSE)
 - 평균 절대 오차(Mean absolute error, MAE)
