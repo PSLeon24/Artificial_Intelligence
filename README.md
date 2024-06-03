@@ -1,4 +1,4 @@
-![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/2f128d81-c292-4c82-b791-14ae5d557bc9)![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/3934fc92-8185-4ea2-8fe5-b06c5c2b27dc)# Artificial Intelligence
+# Artificial Intelligence
 Yeongmin Ko's learning notes
 
 #### Difference
