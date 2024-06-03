@@ -1,4 +1,4 @@
-# Artificial Intelligence
+![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/2f128d81-c292-4c82-b791-14ae5d557bc9)![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/3934fc92-8185-4ea2-8fe5-b06c5c2b27dc)# Artificial Intelligence
 Yeongmin Ko's learning notes
 
 #### Difference
@@ -12,6 +12,7 @@ Yeongmin Ko's learning notes
   - <img width="300" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/c68d8304-d5a5-44f3-a4de-ba72c82e98d4">
   - 이때, 각 하위 집합을 클러스터라고 부름(A subset is called cluster)
   - <img width="300" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/9f154364-d262-4917-8e5e-11622078ddf9">
+  
 - K-Means(K-평균)
   - K는 클러스터(하위 집합)의 갯수(K is number of clusters)
   - 중심 기반 테크닉(A centroid-based technique)
@@ -81,7 +82,7 @@ Yeongmin Ko's learning notes
   - Step 4. 1~3의 결과로 어떤 클래스가 높은 사후 확률을 갖게 될 지 알 수 있음(입력 값이 어떤 클래스에 더 높은 확률로 속할 수 있을지)
     
 ### 4. Association Mining(Apriori Algorithm)
-- 연관 규칙 분석
+- 연관 규칙(Association Rule)
   - 데이터에서 변수 간의 유의미한 규칙을 발견하는 데 쓰이는 알고리즘
   - e.g., 라면을 구매하는 고객이 햇반을 함께 구매할 가능성이 높다.
 - 연관성 규칙 생성 과정
@@ -102,6 +103,50 @@ Yeongmin Ko's learning notes
     - Step 6. 신뢰도가 최소 신뢰도(minimum confidence)를 넘는 규칙들만 남김
 
 ### 5. Collaborative Filtering
+- 협업 필터링(Collaborative Filtering)
+  - 제품 및 사용자 간의 유사성을 검토하고 이를 바탕으로 사용자 취향에 맞는 제품을 추천해주는 방식으로 사용자 기반 협업 필터링과 아이템 기반 협업 필터링으로 분류할 수 있음
+    - e.g., 특정 사용자와 비슷한 취향을 가진 사람이 좋아하는 음악은 특정 사용자도 좋아할 가능성이 높음
+- Recommendation Systems Applications
+
+|Amazon|Netflix|Watcha|
+|:--:|:--:|:--:|
+|![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/9908fe9b-c37e-43c8-9df5-8b5fda638f4e)|![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/a6ced1f0-5af5-49b8-85f7-1d6490d9e64e)|![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/ece2d3c7-bb22-42fa-ab60-968c4f90b7e6)|
+
+- 사용자 기반 협업 필터링(User-based filtering)
+  - Basic idea: 타겟 사용자와 관심사가 같은 유사 사용자 찾기
+    - e.g., 영화 추천 시스템에서 한 사용자가 특정 영화에 높은 평점을 줬다면, 이와 비슷한 취향을 가진 사용자들에게도 해당 영화를 추천
+  - <img width="442" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/65720a5b-bf55-4437-978e-340b54e7b8b8">
+  - 사용자 간의 유사성 계산(피어슨 상관계수 활용)
+  - <img width="429" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/d8fed7b3-d0ae-499a-b262-759e911d652a">
+  - <img width="329" alt="스크린샷 2024-06-03 오후 2 36 23" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/026f208e-9e73-4905-9171-65032f785e51">
+  - 사용자 A와 B의 공분산을 각각의 표준편차의 곱으로 나누면 피어슨 상관계수를 구할 수 있음
+  
+- 아이템 기반 협업 필터링(Item-based filtering)
+  - Basic idea: 아이템 간의 유사성을 사용하여 추천 제공
+    - e.g., 대다수의 사용자가 A 영화에 이어 B 영화를 높게 평가했다면, A 영화를 선호하는 사용자에게 B 영화를 추천할 수 있음
+  - <img width="454" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/e939b113-4446-4535-a8ca-e9baf4474e63">
+
+- <img width="653" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/955ce3a3-17e9-4f7a-a25b-df67829fa714">
+
+- 사용자 기반 협업 필터링의 장·단점
+  - 장점
+    1. 직관성: 동일한 취향을 가진 사용자의 행동을 기반으로 추천을 제공하기 때문에 이해하기 쉬움
+    2. 개인화된 추천: 비슷한 사용자를 찾음으로써 개인화된 추천이 가능함
+    3. 신규 아이템 추천 가능: 새로운 아이템이 시스템에 추가되면 기존의 사용자 취향에 맞추어 쉽게 추천 가능
+  - 단점
+    1. 확장성 문제: 사용자 수가 많아질수록 유사도 계산이 비효율적이게 됩니다. 특히 대규모 데이터셋에서는 계산 비용이 높음
+    2. 희소성 문제: 사용자-아이템 매트릭스가 희소할 경우(많은 빈칸이 있는 경우) 유사한 사용자를 찾기가 어려움
+    3. 콜드 스타트 문제: 새로운 사용자에 대해 충분한 정보가 없을 경우 추천이 어려움
+    
+- 아이템 기반 협업 필터링의 장·단점
+  - 장점
+    1. 확장성: 아이템 수는 일반적으로 사용자 수보다 적기 때문에 유사도 계산이 더 효율적
+    2. 안정성: 아이템의 유사도는 시간에 따라 크게 변하지 않으므로 더 안정적인 추천이 가능함
+    3. 희소성 문제 해결: 사용자가 적어도 하나의 아이템을 평가했다면 추천이 가능함
+  - 단점
+    1. 신규 아이템 문제: 새로운 아이템에 대한 유사도 정보를 얻기 어려워 추천이 힘들 수 있음
+    2. 개인화 부족: 사용자 기반 협업 필터링에 비해 개인화가 어려움. 특정 사용자의 취향보다는 아이템의 전반적인 유사성에 의존하기 때문
+    3. 초기 학습 비용: 초기 아이템 간 유사도 계산에 많은 시간이 소요될 수 있음
 
 ### 6. Linear Regression
 - 선형 회귀(Linear Regression): 주어진 데이터에서 독립 변수(X)와 종속 변수(Y) 간의 선형 관계를 모델링하여 연속적인 값을 예측하는 머신러닝 알고리즘(머신러닝 알고리즘이지만 인공신경망 알고리즘의 기초가 됨)
@@ -161,6 +206,23 @@ Yeongmin Ko's learning notes
 ### 12. Recurrent Neural Network
 
 ### 13. Long Short-Term Memory
+
+---
+
+## Similarity Measure
+### 1. Pearson Correlation
+- 피어슨 상관계수(Pearson Correlation): -1 ~ 1 사이의 가능한 유사도(Possible similarity values between -1 and 1)
+- <img width="632" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/f720fda4-9479-4309-a66c-502847f73208">
+
+  - 1에 가까울 수록 양의 상관관계
+  - -1에 가까울 수록 음의 상관관계
+  - 0에 가까울 수록 상관관계 없음
+
+### 2. Cosine Similarity
+- 코사인 유사도: 벡터 간의 각도를 측정해서 유사도 계산
+  - 내적 공식: A·B = ||A|| * ||B|| * cosθ
+  - 위 공식을 통해 cosθ = A·B / (||A|| * ||B||) 를 구할 수 있음
+- <img width="370" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/c5e446bd-7e01-4704-ad01-f2451d415a8c">
 
 ---
 
