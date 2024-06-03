@@ -19,6 +19,11 @@ Yeongmin Ko's learning notes
 
     - 위 그림의 경우, K = 4
 - 작동 알고리즘
+  - Step 1. 군집의 갯수 k 결정(Determine parameter k (k > 0))
+  - Step 2. 초기 중심점 설정을 위해 k개의 점을 무작위로 선택
+  - Step 3. 모든 점을 가장 가까운 중심에 할당하여 k개의 클러스터를 형성
+  - Step 4. 각 클러스터의 중심점을 다시 계산(각 클러스터의 평균 계산)
+  - Step 5. 중심이 변하지 않을 때까지 3~4단계를 반복
 
 ### 2. K-Nearest Neighbors
 - K 최근접 이웃(K-Nearest Neighbors)
