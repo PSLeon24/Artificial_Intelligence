@@ -1,7 +1,9 @@
 # Artificial_Intelligence
 Yeongmin Ko's learning notes
 
-### 1. K-Nearest Neighbors
+### 1. K-Means(Clustering)
+
+### 2. K-Nearest Neighbors
 - K 최근접 이웃(K-Nearest Neighbors)
   - 새로운 데이터가 들어왔을 때 기존 데이터 중 새로운 데이터와 비슷한 속성의 그룹으로 분류하는 알고리즘(Classifies unlabeled data points by assigning them the class of similar labeled data points)
 - 작동 알고리즘
@@ -21,7 +23,7 @@ Yeongmin Ko's learning notes
   - Nominal feature and missing data require additional processing
     - KNN은 주로 수치형 데이터에 사용되기 때문에 명목형 변수에 대해서는 라벨 인코딩이나 원핫 인코딩과 같은 방식으로 수치형으로 변환해야 하며 결측값의 경우 별도의 방식으로 전처리해야 하는 추가 비용이 발생
 
-### 2. Naive Bayes
+### 3. Naive Bayes
 - 베이즈 정리(Bayes' theorem): 사전확률과 사후확률의 관계에 대해서 설명하는 정리
 - ![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/ec97f4bb-f437-45e8-b588-eb5dc8dbb0b2)
 - <img width="191" alt="스크린샷 2024-05-30 오후 1 32 03" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/1d0da83c-5617-42cf-9437-3dea2c5288c1">
@@ -42,7 +44,7 @@ Yeongmin Ko's learning notes
   - Step 3. 이 값을 Bayes Formula에 대입하고 사후 확률(Posterior probability)을 계산
   - Step 4. 1~3의 결과로 어떤 클래스가 높은 사후 확률을 갖게 될 지 알 수 있음(입력 값이 어떤 클래스에 더 높은 확률로 속할 수 있을지)
     
-### 3. Association Mining(Apriori Algorithm)
+### 4. Association Mining(Apriori Algorithm)
 - 연관 규칙 분석
   - 데이터에서 변수 간의 유의미한 규칙을 발견하는 데 쓰이는 알고리즘
   - e.g., 라면을 구매하는 고객이 햇반을 함께 구매할 가능성이 높다.
@@ -63,11 +65,11 @@ Yeongmin Ko's learning notes
     - Step 5. 각 빈발 항목 집합에 대해 모든 가능한 연관 규칙을 생성하고 각각의 신뢰도(confidence)를 계산함
     - Step 6. 신뢰도가 최소 신뢰도(minimum confidence)를 넘는 규칙들만 남김
 
-### 4. Collaborative Filtering
+### 5. Collaborative Filtering
 
-### 5. Linear Regression
+### 6. Linear Regression
 
-### 6. Logistic Regression
+### 7. Logistic Regression
 - 로지스틱 회귀(Logistic Regression): 입력 변수들을 선형 함수에 통과시켜 얻은 값을 활성화 함수를 통해 변환시켜 얻은 확률을 임계 함수를 통해 예측을 수행하는 구조
   - 활성화 함수: 선형 함수를 통과시켜 얻은 값을 임계 함수에 보내기 전에 변형시키는데 필요한 함수로, 주로 비선형 함수를 사용
     - Why does Activation function use nonlinear function?
@@ -85,9 +87,7 @@ Yeongmin Ko's learning notes
 - Sigmoid function(시그모이드 함수)
   - <img src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/44c8677a-74cb-4427-a015-4d3993248337" width="400px">
 
-### 7. Perceptron
-
-### 8. Adaline
+### 8. Perceptron & Adaline
 
 ### 9. Single Layer Neural Network
 
