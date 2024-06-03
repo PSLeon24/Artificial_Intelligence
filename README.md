@@ -105,7 +105,7 @@ Yeongmin Ko's learning notes
   - <img width="168" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/ebcc335b-6be3-427b-a6e5-6b61702655f6">
   - 재현율은 정밀도와 헷갈리기 쉬운데, 실제값이 긍정이라는 키워드를 기억하면 분모의 수식인 TP + FN을 기억하기 쉬움
 - F 점수(F-Score): 정밀도와 재현율의 조화평균
-  - ![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/e2e410db-b2e6-4cc3-95c5-af5164d27b24)
+  - <img width="326" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/e2e410db-b2e6-4cc3-95c5-af5164d27b24">
 
 ### 2. Regression
 - 평균 제곱 오차(Mean Squared Error, MSE)
