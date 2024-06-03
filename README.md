@@ -13,7 +13,8 @@ Yeongmin Ko's learning notes
   - <img width="300" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/9f154364-d262-4917-8e5e-11622078ddf9">
 - K-Means
   - K는 클러스터(하위 집합)의 갯수(K is number of clusters)
-
+  - 중심 기반 테크닉(A centroid-based technique)
+    - Centroid는 각 클러스터에 속한 객체의 평균(Centroid is the average of objects belonging to each cluster)
   - <img width="400" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/074355e7-de56-4c05-826d-e8f26361a40c">
 
     - 위 그림의 경우, K = 4
