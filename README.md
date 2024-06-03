@@ -4,10 +4,10 @@ Yeongmin Ko's learning notes
 #### Difference
 - Classification: KNN, Decision Tree
 - Regression: Linear and Logistic Regression
-- Clustering: K-Means, Agglomerative clustering, DBSCAN
+- Clustering: K-Means, Agglomerative Clustering, DBSCAN
 - <img width="626" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/b66ab79f-faab-47ad-bce3-975e0f94b7b7">
 
-### 1. Clustering(K-Means, 
+### 1. Clustering(K-Means, Agglomerative Clustering, DBSCAN)
 - 군집화(Clustering): 서로 유사한 데이터 개체 집합을 하위 집합으로 분할하는 프로세스(The process of partitioning a set of data objects that are similar to each other into subsets)
   - <img width="300" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/c68d8304-d5a5-44f3-a4de-ba72c82e98d4">
   - 이때, 각 하위 집합을 클러스터라고 부름(A subset is called cluster)
@@ -26,7 +26,7 @@ Yeongmin Ko's learning notes
   - Step 4. 각 클러스터의 중심점을 다시 계산(각 클러스터의 평균 계산)
   - Step 5. 중심이 변하지 않을 때까지 3~4단계를 반복
 
-- Agglomerative clustering(병합 군집)
+- Agglomerative Clustering(병합 군집)
   - 상향식 전략(Bottom-up strategy)
   - 각 개체가 자체 클러스터를 형성하도록 하는 것부터 시작하여 모든 객체가 단일 클러스터에 포함될 때까지 클러스터를 점점 더 큰 클러스터로 반복적으로 병합
 - 작동 알고리즘
@@ -35,7 +35,8 @@ Yeongmin Ko's learning notes
   - Step 3. 단일 클러스터가 될 때까지 2단계를 반복
 
 - DBSCAN(밀도 기반 클러스터링)
-  - "이웃"의 밀도가 일부 임계값을 초과하는 한 특정 클러스터를 계속 늘려나감
+  - 어느 점을 기준으로 반경 radius 내에 점이 n개 이상 있으면 하나의 군집으로 인식하는 방식
+  - <img width="400" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/88ab9c6f-d72a-4938-ac35-8c803e5dc6ab">
 
 ### 2. K-Nearest Neighbors
 - K 최근접 이웃(K-Nearest Neighbors)
