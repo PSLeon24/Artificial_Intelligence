@@ -104,28 +104,55 @@ Yeongmin Ko's learning notes
 ### 5. Collaborative Filtering
 
 ### 6. Linear Regression
+- 선형 회귀(Linear Regression): 주어진 데이터에서 독립 변수(X)와 종속 변수(Y) 간의 선형 관계를 모델링하여 연속적인 값을 예측하는 머신러닝 알고리즘(머신러닝 알고리즘이지만 인공신경망 알고리즘의 기초가 됨)
+  - <img width="301" alt="스크린샷 2024-06-03 오후 1 29 27" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/e55bf540-a759-45e8-8c7b-0c61f2744d13">
+  - 위 수식에서 𝛽는 회귀 계수, ϵ은 오차항이며, 회귀 계수를 찾기 위해 최소제곱법을 사용하여 오차 제곱합을 최소화
+- <img width="706" alt="스크린샷 2024-06-03 오후 1 32 37" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/42fa170e-7932-48a1-b7d5-1de0400f3832">
 
-### 7. Logistic Regression
-- 로지스틱 회귀(Logistic Regression): 입력 변수들을 선형 함수에 통과시켜 얻은 값을 활성화 함수를 통해 변환시켜 얻은 확률을 임계 함수를 통해 예측을 수행하는 구조
-  - 활성화 함수: 선형 함수를 통과시켜 얻은 값을 임계 함수에 보내기 전에 변형시키는데 필요한 함수로, 주로 비선형 함수를 사용
-    - Why does Activation function use nonlinear function?
-      - 선형 함수(단순한 규칙)의 경우 직선으로 data를 구분하는데, 이는 아무리 층을 깊게 쌓아도 하나의 직선으로 규칙이 표현된다는 것을 뜻함. 즉, 선형 변환을 계속 반복하더라도 결국 선형 함수이므로 별 의미가 없음.
-      - 그러나, 비선형 함수의 경우 여러 데이터의 복잡한 패턴을 학습할 수 있고, 계속 비선형을 유지하기 때문에 다층 구조의 유효성을 충족시킬 수 있음. 또한, 비선형 함수는 대부분 미분이 가능하기 때문에 활성화 함수로 적합함.
+### 7. Perceptron & Adaline
+- 퍼셉트론(Perceptron): 퍼셉트론은 단층 신경망의 가장 기본적인 형태로, 선형 회귀와 유사한 구조를 가지며 이진 분류 문제를 해결하기 위해 사용
+  - 퍼셉트론은 입력값에 가중치를 곱한 후, 그 합을 활성화 함수(주로 계단 함수)를 통해 이진 출력을 생성
+  - <img width="307" alt="스크린샷 2024-06-03 오후 1 33 42" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/6c57aef9-062b-431b-8f37-4c10fad721e7">
+  - 위 수식에서 step은 가중치 합을 입력으로 받아서 최종 출력을 결정하는 계단 함수이고, w는 가중치 벡터, 𝑥는 입력 벡터, 𝑏는 바이어스
+  - 계단 함수(step)의 수식: <img width="182" alt="스크린샷 2024-06-03 오후 1 33 47" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/bd6ec667-a781-4a36-bccf-7b27a409efc5">
+- <img width="703" alt="스크린샷 2024-06-03 오후 1 35 19" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/0ee26960-d6a3-46ff-b840-f7a6ab0e6b61">
+
+- 아달린(Adaline): 퍼셉트론과 유사하지만, 출력에 활성화 함수(계단 함수)를 적용하지 않고 선형 함수의 결과를 학습에 사용하는 것이 특징
+  - <img width="266" alt="스크린샷 2024-06-03 오후 1 36 45" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/540ff43a-1130-4975-9ba9-f4c614a67600">
+  - 위 수식에서 w는 가중치 벡터, 𝑥는 입력 벡터, 𝑏는 바이어스, 아데린은 평균 제곱 오차 함수를 사용하여 가중치를 업데이트하며, 연속적인 오차를 최소화
+- <img width="700" alt="스크린샷 2024-06-03 오후 1 37 22" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/c760780a-67ec-4ffd-aaa9-a796dbffc52b">
+
+### 8. Logistic Regression
+- 로지스틱 회귀(Logistic Regression): 이진 분류 문제를 해결하기 위해 고안된 방법으로, 입력 변수들의 선형 결합을 구한 후 이를 로짓 함수(또는 로지스틱 함수)를 통과시켜 확률을 예측
+  - 로짓 함수는 S자 형태를 띠며 0과 1 사이의 값을 가짐. 이 함수를 통과한 결과는 특정 사건이 발생할 확률로 해석되며, 이진 분류에서는 양성 클래스에 속할 확률로 해석
+  - <img width="339" alt="스크린샷 2024-06-03 오후 1 38 38" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/b5062c07-ff4e-4e5f-ae81-5999e4380d52">
+  - 위 수식에서 𝑃(Y=1)은 양성 클래스에 속할 확률을 의미하며, X는 입력 변수, 𝛽는 회귀 계수를 나타냄. 모델은 주어진 데이터에서 확률을 최대화하는 회귀 계수를 찾기 위해 최대 우도 추정(MLE)법을 사용
+
 - Odds(오즈): 성공 확률과 실패 확률의 비율 → 특정 사건이 발생할 확률을 그 사건이 발생하지 않을 확률과 비교한 값
   - 0부터 1까지 증가할 때 오즈 비의 값은 처음에는 천천히 증가하다가 p가 1에 가까워지면 급격히 증가함
   - Odds Ratio(오즈 비): p / (1 - p) (p = 성공 확률)
     - e.g., 어떤 사건이 발생할 확률이 80%일 때의 odds ratio는?
       - 0.8 / (1 - 0.8) = 0.8 / 0.2 = 4
+      
 - Logit function(로짓 함수): 오즈의 자연 로그를 취한 값
   - logit(p) = log(p / (1 - p))
   - ![image](https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/c5c323d6-3c18-4a4c-b467-ef38b47e209d)
   - p가 0.5일 때 0이 되고 가 0과 1일 때 각각 무한대로 음수와 양수가 되는 특징을 가짐
+
+- <img width="704" alt="스크린샷 2024-06-03 오후 1 39 58" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/e05fc1f7-10b0-42d0-ab7b-906bc066232b">
+
+- 활성화 함수: 선형 함수를 통과시켜 얻은 값을 임계 함수에 보내기 전에 변형시키는데 필요한 함수로, 주로 비선형 함수를 사용
+  - Why does Activation function use nonlinear function?
+    - 선형 함수(단순한 규칙)의 경우 직선으로 data를 구분하는데, 이는 아무리 층을 깊게 쌓아도 하나의 직선으로 규칙이 표현된다는 것을 뜻함. 즉, 선형 변환을 계속 반복하더라도 결국 선형 함수이므로 별 의미가 없음.
+    - 그러나, 비선형 함수의 경우 여러 데이터의 복잡한 패턴을 학습할 수 있고, 계속 비선형을 유지하기 때문에 다층 구조의 유효성을 충족시킬 수 있음. 또한, 비선형 함수는 대부분 미분이 가능하기 때문에 활성화 함수로 적합함.
 - Sigmoid function(시그모이드 함수)
   - <img src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/44c8677a-74cb-4427-a015-4d3993248337" width="400px">
 
-### 8. Perceptron & Adaline
-
 ### 9. Single Layer Neural Network
+- 단일층 신경망: 입력층과 출력층으로 구성된 가장 간단한 형태의 신경망. 주로 퍼셉트론, 아데린, 로지스틱 회귀와 같은 모델들을 포함할 수 있으며, 다양한 활성화 함수를 사용할 수 있어 비선형 문제를 해결할 수 있음
+- <img width="148" alt="스크린샷 2024-06-03 오후 1 41 02" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/4d662bf8-c935-4f62-8751-33f8292333ab">
+- 위 수식에서 f는 활성화 함수(예: 시그모이드 함수, ReLU 등), w는 가중치 벡터, 𝑥는 입력 벡터, 𝑏는 바이어스
+- <img width="702" alt="스크린샷 2024-06-03 오후 1 41 28" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/fd52d358-2c58-4d6a-a545-6fbd1bcda716">
 
 ### 10. Multi Layer Neural Network
 
