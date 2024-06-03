@@ -18,7 +18,7 @@ Yeongmin Ko's learning notes
   - <img width="400" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/074355e7-de56-4c05-826d-e8f26361a40c">
 
     - 위 그림의 경우, K = 4
-
+- 작동 알고리즘
 
 ### 2. K-Nearest Neighbors
 - K 최근접 이웃(K-Nearest Neighbors)
