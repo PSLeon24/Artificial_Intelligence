@@ -100,8 +100,10 @@ Yeongmin Ko's learning notes
   - <img width="432" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/a8d70ffa-20f5-4d2e-b63d-7e8aae638e23">
 - 정밀도(Precision): 정밀도는 모델의 예측값이 긍정인 것들 중 실제값이 긍정인 비율을 나타냄
   - <img width="210" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/3d1a2bc9-f6f4-4656-add9-5eb290020954">
+  - 정밀도는 재현율과 헷갈리기 쉬운데, 예측값이 긍정이라는 키워드를 기억하면 분모의 수식인 TP + FP를 기억하기 쉬움
 - 재현율(Recall): 재현율은 실제값이 긍정인 것들 중 예측값이 긍정인 비율을 나타냄
   - <img width="168" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/ebcc335b-6be3-427b-a6e5-6b61702655f6">
+  - 재현율은 정밀도와 헷갈리기 쉬운데, 실제값이 긍정이라는 키워드를 기억하면 분모의 수식인 TP + FN을 기억하기 쉬움
 - F 점수(F-Score): 정밀도와 재현율의 조화평균
   - <img width="461" alt="image" src="https://github.com/PSLeon24/Artificial_Intelligence/assets/59058869/fbea55ca-f00c-4291-842a-54dd0af1f686">
 
