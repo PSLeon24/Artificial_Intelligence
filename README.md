@@ -1,7 +1,25 @@
 # Artificial_Intelligence
 Yeongmin Ko's learning notes
 
-### 1. K-Nearest Neighbor
+### 1. K-Nearest Neighbors
+- K 최근접 이웃(K-Nearest Neighbors)
+  - 새로운 데이터가 들어왔을 때 기존 데이터 중 새로운 데이터와 비슷한 속성의 그룹으로 분류하는 알고리즘(Classifies unlabeled data points by assigning them the class of similar labeled data points)
+- 작동 원리
+  - Step 1. 주변의 몇 개의 데이터와 비교할지 파라미터 k 결정(Determine parameter k (k > 0))
+  - Step 2. 새 데이터와 기존 데이터 간의 거리를 계산해서 두 데이터 간의 유사도 구하기(Determine similarity by calculating the distance between a test point and all other points in the dataset)
+  - Step 3. 2단계에서 계산한 거리 값에 따라 데이터 세트를 정렬(Sort the dataset according to the distance values)
+  - Step 4. k번째 최근접 이웃의 범주를 결정(Determine the category of the k-th nearest neighbors)
+  - Step 5. 새로운 데이터에 대해 k개의 최근접 이웃의 단순 다수결을 통해 범주를 결정(Use simple majority of the category of the k nearest neighbors as the category of a test point)
+- 장점(advantages)
+  - 간단하고 상대적으로 효과적(Simple and relatively effective)
+- 단점(disadvantages)
+  - Requires selection of an appropriate k
+    - k가 너무 작으면 모델이 복잡해서 과적합(overfitting)이 발생
+    - k가 너무 크면 모델이 너무 단순해져서 과소적합(underfitting)이 발생
+  - Does not produce a model
+    - 별도의 학습 모델을 생성하지 않기 때문에 새로운 데이터에 대해 매번 계산이 필요하므로 계산 비용이 높음
+  - Nominal feature and missing data require additional processing
+    - KNN은 주로 수치형 데이터에 사용되기 때문에 명목형 변수에 대해서는 라벨 인코딩이나 원핫 인코딩과 같은 방식으로 수치형으로 변환해야 하며 결측값의 경우 별도의 방식으로 전처리해야 하는 추가 비용이 발생
 
 ### 2. Naive Bayes
 - 베이즈 정리(Bayes' theorem): 사전확률과 사후확률의 관계에 대해서 설명하는 정리
@@ -56,3 +74,17 @@ Yeongmin Ko's learning notes
 ### 12. Recurrent Neural Network
 
 ### 13. Long Short-Term Memory
+
+--
+
+## Evaluation Metrics
+### 1. Classification
+- 혼동 행렬(Confusion matrix)
+- 정확도(Accuracy)
+- 오차율(Error rate)
+- 정밀도(Precision)
+- 재현율(Recall)
+- F 점수(F-Score)
+### 2. Regression
+- 평균 제곱 오차(Mean Squared Error, MSE)
+- 평균 절대 오차(Mean absolute error, MAE)
