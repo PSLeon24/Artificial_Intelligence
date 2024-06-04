@@ -88,10 +88,10 @@ Yeongmin Ko's learning notes
 - 연관성 규칙 생성 과정
   - Step 1. 지지도(Support, 교사건)
     - 데이터에서 항목 집합이 얼마나 빈번하게 등장하는지를 나타내는 척도
-    - Support(X) = Count(X) / n
+    - Support(X) = Count(X) / N
   - Step 2. 신뢰도(Confidence, 조건부 확률)
     - 조건부 아이템(A)을 구매한 경우, 이중에서 얼마나 결론부 아이템(B)을 구매할 것인지를 나타내는 척도
-    - Confidence(A → B) = Support(X, Y) / Support(X) = Support(X, Y) / Support(X)
+    - Confidence(X → Y) = Support(X, Y) / Support(X)
 - Apriori Algorithm
   - 연관 규칙(association rule)의 대표적인 알고리즘으로, 특정 사건이 발생했을 때 함께 발생하는 또 다른 사건의 규칙을 찾는 알고리즘
   - 작동 알고리즘
