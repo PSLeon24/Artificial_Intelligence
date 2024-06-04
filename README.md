@@ -264,3 +264,22 @@ Yeongmin Ko's learning notes
 ### 3. Regression
 - 평균 제곱 오차(Mean Squared Error, MSE)
 - 평균 절대 오차(Mean absolute error, MAE)
+
+---
+
+## Etc
+- Overfitting / Underfitting
+  - There is a tradeoff between a model's ability to minimize bias and variance.
+  - Overfitting: High variance, Low bias
+  - Underfitting: High bias, Low variance
+
+- Regularization
+  - L1 Regularization(Lasso)
+  - L2 Regularization(Ridge)
+
+- Optimization
+  - Gradient Descent
+    - Stochastic Gradient Descent(SGD)
+    - Batch Gradient Descent(BGD)
+    - Mini-batch gradient descent(MSGD)
+  - Backpropagation
