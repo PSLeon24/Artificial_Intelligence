@@ -6,3 +6,4 @@ data/stl10_binary/unlabeled_X.bin
 data/stl10_binary.tar.gz
 data/stl10_binary/train_X.bin
 data/stl10_binary/test_X.bin
+data/cifar-10-python.tar.gz
