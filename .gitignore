@@ -2,3 +2,7 @@
 .DS_Store
 .ipynb_checkpoints/index-checkpoint.ipynb
 Practice to PyTorch/pytorch_advanced/
+data/stl10_binary/unlabeled_X.bin
+data/stl10_binary.tar.gz
+data/stl10_binary/train_X.bin
+data/stl10_binary/test_X.bin
