@@ -214,6 +214,8 @@ Yeongmin Ko's learning notes
     - W2 = (W1 - F + 2P)/S + 1
     - H2 = (H1 - F + 2P)/S + 1
     - D2 = K
+  - With parameter sharing, it introduces F·F·D1 weights per filter, for a total of (F·F·D1)·K weights and K biases.
+  - In the output volume, the d-th depth slice (of size W2 x H2) is the result of performing a valid convolution of the d-th filter over the input volume with a stride of S, and then offset by d-th bias.
 
 ### 12. Recurrent Neural Network
 
