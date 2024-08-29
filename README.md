@@ -203,6 +203,17 @@ Yeongmin Ko's learning notes
 ### 10. Multi Layer Neural Network
 
 ### 11. Convolutional Neural Network
+- Summary
+  - Accepts a volume of size W1 x H1 x D1
+  - Requires four hyperparameters:
+    - Number of filters K(Common settings: powers of 2),
+    - there spatial extent F,
+    - the stride S,
+    - the amount of zero padding
+  - Produces a volume of size W2 x H2 x D2 where:
+    - W2 = (W1 - F + 2P)/S + 1
+    - H2 = (H1 - F + 2P)/S + 1
+    - D2 = K
 
 ### 12. Recurrent Neural Network
 
